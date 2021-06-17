@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/acfbe09426.js" crossorigin="anonymous"></script>
+    <title>login and registration form  design</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-navbar-up">
+        <div class="container">
+        <h1 class="logo lg-heading text-light">AS</h1>
+        <ul class="nav-items md-heading">
+            <li class="nav-item "><a href="./home.html ">Home</a></li>
+            <li class="nav-item"><a href="./login.html">login</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+       </div>
+    </nav>
+    
+  <section class="login-page">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Your Email id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="login-btn">Login</button>
+                        <p>New Here? click below</p>
+                    </form>
+                    <button type="button" class="btn" onclick="openREGISTER()">Register Here !</button>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Your Name" required>
+                        <input type="email" class="input-box" placeholder="Your Email id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="reg-btn">Register</button>
+                        <p>Already have an account!</p>
+                    </form>
+                    <button type="button" class="btn" onclick="opneLOGIN()">Login Here!</button>
+                </div>
+            </div>
+        </div>
+       
+  <footer class="footer-login bg-navbar-bottom">
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/profile.php?id=100011769265314" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+        <a href="https://www.instagram.com/yourashish07" target="_blank"><i class="fab fa-instagram-square fa-3x"></i> </a>
+        <a href="https://in.linkedin.com/in/ashish-sharma-0707?trk=profile-badge" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      </div>
+    </div>
+    <p class="md-heading text-light">Created & Desgined by Ashish Sharma</p>
+  </footer>
+
+          <script>
+              var card =document.getElementById("card");
+              function openREGISTER(){
+                  card.style.transform = "rotateY(-180deg)";
+              }
+              function opneLOGIN(){
+                  card.style.transform = "rotateY(0deg)";
+              }
+          </script>
+                 
+</body>
+</html>
